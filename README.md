@@ -5,7 +5,7 @@ A Go package for Solana Token 2022 operations.
 ## Installation
 
 ```bash
-go get github.com/dwnfan/token2022
+go get github.com/dwmfan/token2022
 ```
 
 ## Usage
@@ -17,7 +17,7 @@ package main
 
 import (
     "fmt"
-    "github.com/dwnfan/token2022"
+    "github.com/dwmfan/token2022"
     "github.com/gagliardetto/solana-go"
 )
 
@@ -42,7 +42,7 @@ package main
 import (
     "context"
     "fmt"
-    "github.com/dwnfan/token2022"
+    "github.com/dwmfan/token2022"
     "github.com/gagliardetto/solana-go"
     "github.com/gagliardetto/solana-go/rpc"
 )
@@ -85,7 +85,6 @@ func main() {
     
     fmt.Println("Transaction created successfully")
 }
-```
 
 ## License
 

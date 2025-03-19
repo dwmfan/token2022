@@ -66,8 +66,8 @@ func TestClose2022Instruction(t *testing.T) {
 
 	built := instruction.Build()
 
-	if len(built.Accounts()) != 3 {
-		t.Errorf("Expected 3 accounts, got %d", len(built.Accounts()))
+	if len(built.Accounts()) != 4 {
+		t.Errorf("Expected 4 accounts, got %d", len(built.Accounts()))
 	}
 
 	if !built.Accounts()[0].IsWritable {
@@ -80,5 +80,9 @@ func TestClose2022Instruction(t *testing.T) {
 
 	if !built.Accounts()[2].IsSigner {
 		t.Errorf("Expected owner to be signer")
+	}
+	
+	if built.Accounts()[3].PublicKey != solana.Token2022ProgramID {
+		t.Errorf("Expected Token 2022 program ID, got %s", built.Accounts()[3].PublicKey)
 	}
 }

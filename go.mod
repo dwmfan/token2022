@@ -1,4 +1,4 @@
-module github.com/dwnfan/token2022
+module github.com/dwmfan/token2022
 
 go 1.21
 
